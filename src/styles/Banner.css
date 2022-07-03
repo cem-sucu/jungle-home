@@ -7,10 +7,16 @@
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
+    background-color: #31b4724f;
+    height: 2rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    justify-content: center;
 }
 
 .lmj-title {
     padding-left: 32px;
+
 }
 
 .lmj-logo {
