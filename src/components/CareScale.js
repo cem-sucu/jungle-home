@@ -1,5 +1,6 @@
 import Sun from "../assets/sun.svg";
 import Water from "../assets/water.svg";
+import "../styles/CareScale.css";
 
 // Ici, il s'agit d'une manière de faire.
 //Vous auriez aussi pu utiliser une fonction qui retourne l'élément souhaité, ou bien faire directement des conditions
@@ -20,6 +21,7 @@ function CareScale({ scaleValue, careType }) {
 
     return (
         <div
+            className="icon"
             onClick={() =>
                 alert(
                     `Cette plante requiert ${quantityLabel[scaleValue]} ${

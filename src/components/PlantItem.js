@@ -5,7 +5,7 @@ function handleClick(plantName) {
     alert(`Vous voulez acheter 1 ${plantName}? Très bon choix 🌱✨`);
 }
 
-function PlantItem({ cover, name, water, light }) {
+function PlantItem({ cover, description, name, water, light }) {
     return (
         <li className="lmj-plant-item" onClick={() => handleClick}>
             <img
@@ -13,7 +13,9 @@ function PlantItem({ cover, name, water, light }) {
                 src={cover}
                 alt={`${name} cover`}
             />
-            {name}
+            <div className="name" onClick={() => alert(description)}>
+                {name}
+            </div>
             <div>
                 <CareScale careType="water" scaleValue={water} />
                 <CareScale careType="light" scaleValue={light} />

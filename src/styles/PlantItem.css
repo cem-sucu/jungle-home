@@ -11,4 +11,10 @@
     justify-content: center;
     flex-direction: column;
     text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.name {
+    cursor: pointer;
 }
